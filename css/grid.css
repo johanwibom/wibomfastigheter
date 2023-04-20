@@ -1,0 +1,66 @@
+/*********************************************/
+/*****                                   *****/
+/*****             GRID.CSS              *****/
+/*****                                   *****/
+/*****                                   *****/
+/*****  Denna fil sätter griddens        *****/
+/*****  utformning                       *****/
+/*****                                   *****/
+/*********************************************/
+
+/*********************************************/
+/*****  Själva utformningen av hemisdan  *****/
+/*********************************************/
+
+.wrapper {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+     "header"
+     "sidebar"
+     "content"
+     "footer"
+  }
+
+  .header {
+    grid-area: header;
+    text-align: center;    
+  }
+
+  .sidebar {
+    grid-area: sidebar;
+    text-align: center;
+  }
+
+  .content {
+    grid-area: content;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+
+    @media only screen and (min-width: 300px)   {
+    .wrapper {
+      grid-template-columns: 100%;
+      grid-template-areas:
+      "header"
+      "sidebar"
+      "content"
+      "footer";
+      max-width: 600px;
+    }
+}
+
+    @media only screen and (min-width: 600px)   {
+    .wrapper {
+      grid-gap: 15px;
+      grid-template-columns: 180px auto;
+      grid-template-areas:
+      "sidebar  header"
+      "sidebar content"
+      "footer  footer";
+      max-width: 1200px;
+    }
+  }
+

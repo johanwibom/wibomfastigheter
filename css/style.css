@@ -1,0 +1,196 @@
+/*********************************************/
+/*****                                   *****/
+/*****             STYLE.CSS             *****/
+/*****                                   *****/
+/*****                                   *****/
+/*****  Denna fil sätter allt utseende   *****/
+/*****  förutom griddens laytout         *****/
+/*****                                   *****/
+/*********************************************/
+
+/*********************************/
+/*        Block för js           */
+/*********************************/
+
+
+/*********************************/
+/* Block med standard layout     */
+/*********************************/
+
+body {
+    margin: 10px;
+    font-size: 14px;
+  }
+  
+  h1 {  
+    font-size: 40px;
+      text-shadow: 2px 2px rgb(0, 0, 0);
+  }
+  
+  h2 {
+      font-size: 24px;
+      font-style: italic;
+      text-shadow: 1px 1px rgb(143, 109, 109);
+  }
+  
+  
+  /*********************************/
+  /* Block med standard layout     */
+  /*********************************/
+  
+  .header{
+    background-image: url("../img/sv.png");
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .headerBild{
+      width: 120px;
+    border-radius: 25%;
+  }
+  
+  .hoger{
+      float: right;
+  }
+  
+  .vanster{
+      float: left;
+  }
+  
+  .sprak{
+    width: 40px;
+    border-radius: 25%;
+    float: center;
+    height: 32px;
+  }
+  
+  
+  /*********************************/
+  /* Block med utseende för länkar */
+  /*********************************/
+  
+  
+  /* Nedan sätter en generell färg på alla länkar (både besökta och obesökta) */
+  a:link  { color: white; }
+  a:visited { color: white; }
+  
+  /* a.menySida sätter utseendet på menyn till vänster för sid-länkarna*/
+  a.menySida
+  {
+    text-decoration: none; /* tar bort understreck på länkarna */
+  }
+  
+  /* a.dennaSida sätter ett markerat utseendet i menyn för den sida vi är på */
+  a.dennaSida {
+    text-shadow: 1px 1px red; /* Gör en röd skuggning*/
+    color: yellow; /* Gör texten gul */
+  }
+  
+  /* a.menySubSida sätter utseendet på menyn till vänster för #-länkarna på varje sida */
+  a.menySubSida
+  {
+    text-decoration: none; /* tar bort understreck på länkarna */
+    font-style: italic; /* sätter kursiv stil på #-länkarna */
+    font-size: 16px; /* sätter en mindre fontstorlek */
+  }
+  
+  /* Nedan sätter en annan färg på ¤-länkarna i menyn */
+  ul#subMeny a:link  { color: rgb(210,210,210); }
+  ul#subMeny a:visited { color: rgb(210,210,210); }
+  
+  a.hover-effekt {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  a.hover-effekt  {
+    background:
+      linear-gradient(
+        to right,
+        rgba(255, 255, 255, 255),
+        rgba(255, 255, 255, 255)
+      ),
+      linear-gradient(
+        to right,
+        rgba(255, 0, 0, 1),
+        rgba(255, 0, 180, 1),
+        rgba(0, 100, 200, 1)
+    );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+  }
+  
+  a:hover {
+    background-size: 0 3px, 100% 3px;
+  }
+  
+  
+  
+  /*********************************/
+  /*  Block med  listors utseende  */
+  /*********************************/
+  
+  ul.menyLista {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+    line-height: 1.5;
+  }
+  
+  ul.menySubLista {
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+    line-height: 1.5;
+  }
+  
+  
+  /********************************************/
+  /*  Block med utseende för hela html-block  */
+  /********************************************/
+  
+  /* .wrapper ger utseedet för hela sidan */
+  .wrapper {
+    background-color: #fff;
+    color: #444;
+  }
+  
+  /* .box ger det generella utseedet alla boxar (header, sidebar, content och footer) */
+  .box {
+    background-color: rgb(97, 97, 97);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 150%;
+  }
+  
+  /* .header sätter det specifika utseendet för header */
+  .header {
+    height: 400px;
+  }
+  
+  /* .footer sätter det specifika utseendet för footer */
+  .footer {
+     text-align: center;
+  }
+  
+  /********************************************/
+  /*  Block med utseende för bilder           */
+  /********************************************/
+  
+  /* img.bild_i_text sätter utseende och placering på bilder i den löpande texten */
+  img.bild_i_text {
+      border-radius: 8px;   /* rundar hörnen */
+      width: 200px; /* sätter en bredd på bilden */
+      float: right; /* högerjusterar bilden */
+  }
+  
+  .fotter{
+    display: inline;
+  }
+  .img{
+    float: left;
+  }
