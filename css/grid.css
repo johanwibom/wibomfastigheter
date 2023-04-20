@@ -50,7 +50,17 @@
       "footer";
       max-width: 600px;
     }
+    .dropdown{
+  display: none;
 }
+.meny{
+  display: inline;
+}
+}
+
+
+
+
 
     @media only screen and (min-width: 600px)   {
     .wrapper {
@@ -61,6 +71,12 @@
       "sidebar content"
       "footer  footer";
       max-width: 1200px;
+    }
+    .meny{
+      display: none;
+    }
+    .dropdown{
+      display: inline;
     }
   }
 

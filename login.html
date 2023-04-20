@@ -17,19 +17,16 @@
 			<div class="box sidebar">
 				<p>&nbsp;</p>
 				<p>&nbsp;</p>
-				<ul class="menyLista" id="meny">
-					<li><a href="index.html" class="menySida">Start</a></li>
-					<ul class="menySubLista" id="subMeny">
-					<!--	<li><a href="#bakgrund" class="menySubSida">Fastigheterna</a></li>
-						<li><a href="#internationellt" class="menySubSida">Om oss</a></li>
-						<li><a href="#turism" class="menySubSida">Kontakt</a></li>
-						<li><a href="#namnet" class="menySubSida">Hyresgästerinformation</a></li>-->
-					</ul>
-					<li><a href="fastigheterna.html" class="menySida">Fastigheterna</a></li>
-					<li><a href="omoss.html" class="menySida">Om oss</a></li>
-					<li><a href="kontakt.html" class="menySida">Kontakt</a></li>
-					<li><a href="login.html" class="menySida dennaSida">Hyresinformation</a></li>
-				</ul>
+				<div class="dropdown">
+					<button onclick="myFunction()" class="dropbtn">Meny</button>
+					<div id="myDropdown" class="dropdown-content">
+						<a href="index.html" class="menySida ">Start</a>
+						<a href="fastigheterna.html" class="menySida">Fastigheterna</a>
+						<a href="omoss.html" class="menySida">Om oss</a>
+						<a href="kontakt.html" class="menySida">Kontakt</a>
+						<a href="login.html" class="menySida dennaSida">Hyresinformation</a>
+					</div>
+				</div>
 			</div>
 
 			<div class="box content">
@@ -47,6 +44,7 @@
 			</div>
 		</div>
 	</body>
+	<script src="js/script.js"></script> <!-- kopplar till script-->
 </html>
 
 
