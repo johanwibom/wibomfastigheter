@@ -198,6 +198,11 @@ float: center;
     background-color: rgb(255, 255, 255);
     color: #444;
   }
+
+  table{
+    display: inline-block;
+  text-align: center;
+  }
   
   /* .box ger det generella utseedet alla boxar (header, sidebar, content och footer) */
   .box {
