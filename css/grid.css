@@ -50,12 +50,12 @@
       "footer";
       max-width: 600px;
     }
-    .dropdown{
-  display: none;
-}
-.meny{
-  display: inline;
-}
+    .meny{
+      display: none;
+    }
+    .meny2{
+      display: inline;
+    }
 }
 
 
@@ -72,10 +72,10 @@
       "footer  footer";
       max-width: 1200px;
     }
-    .meny{
+    .meny2{
       display: none;
     }
-    .dropdown{
+    .meny{
       display: inline;
     }
   }
