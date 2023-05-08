@@ -27,6 +27,11 @@
     text-align: center;    
   }
 
+  .header-index {
+    grid-area: header;
+    text-align: center;    
+  }
+
   .sidebar {
     grid-area: sidebar;
     text-align: center;

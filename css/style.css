@@ -61,7 +61,8 @@ body {
   
   h1 {  
     font-size: 40px;
-      text-shadow: 2px 2px rgb(255, 255, 255);
+    text-shadow: 2px 2px rgb(110, 110, 110);
+    color: rgb(255, 255, 255);
   }
   
   h2 {
@@ -69,19 +70,41 @@ body {
       font-style: italic;
       text-shadow: 1px 1px rgb(141, 141, 141);
   }
-  
+  .header-index h2 {
+    font-size: 24px;
+    font-style: italic;
+    text-shadow: 2px 2px rgb(110, 110, 110);
+    color: rgb(255, 255, 255);
+}
+
   
   /*********************************/
   /* Block med standard layout     */
   /*********************************/
   
-  .header{
-    background-image: url("../img/wf2.png");
+
+  .header-index{
+    background-image: url("../img/20170504_DSC_4887_cr_borgis_tak.JPG");
     background-position: 50% 25%;
     background-repeat: no-repeat;
     background-size: cover;
+
   }
-  
+
+  .header{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+ 
+  }
+
+  #videocontainer
+  {
+    width: 100%;
+    height: 100%;
+    frameborder: 10;
+  }
+
   .headerBild{
       width: 120px;
     border-radius: 25%;
@@ -196,18 +219,21 @@ float: center;
   /* .wrapper ger utseedet för hela sidan */
   .wrapper {
     background-color: rgb(255, 255, 255);
-    color: #444;
     font-family: 'Raleway', sans-serif;
   }
 
   table{
     display: inline-block;
   text-align: center;
-  width:"100%"
+  width: 100%;
+  }
+
+  .help{
+    width: 100px;
   }
   
   td{
-    width:"50%"
+    width:50%;
   }
 
   h2{
@@ -227,7 +253,16 @@ float: center;
   .header {
     height: 400px;
   }
-  
+
+  .header-index {
+    height: 400px;
+  }
+ 
+  /* .content sätter det specifika utseendet för content-de */
+  .content {
+    background-color: rgb(240, 240, 240);
+  }
+
   /* .footer sätter det specifika utseendet för footer */
   .footer {
      text-align: center;
