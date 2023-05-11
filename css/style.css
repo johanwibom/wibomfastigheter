@@ -15,7 +15,7 @@
   background-color: #444;
   color: white;
   padding: 16px;
-  font-size: 16px;
+  font-size: 80%;
   border: none;
   cursor: pointer;
 }
@@ -66,12 +66,12 @@ body {
   }
   
   h2 {
-      font-size: 119%;
+      font-size: 125%;
       font-style: italic;
       text-shadow: 1px 1px rgb(141, 141, 141);
   }
   .header-index h2 {
-    font-size: 119%;
+    font-size: 125%;
     font-style: italic;
     text-shadow: 2px 2px rgb(110, 110, 110);
     color: rgb(255, 255, 255);
@@ -154,7 +154,7 @@ float: center;
   {
     text-decoration: none; /* tar bort understreck på länkarna */
     font-style: italic; /* sätter kursiv stil på #-länkarna */
-    font-size: 16px; /* sätter en mindre fontstorlek */
+    font-size: 100%; /* sätter en mindre fontstorlek */
   }
   
   /* Nedan sätter en annan färg på ¤-länkarna i menyn */
