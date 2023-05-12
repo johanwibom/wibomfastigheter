@@ -78,9 +78,9 @@ body {
 }
 
   
-  /*********************************/
-  /* Block med standard layout     */
-  /*********************************/
+  /*******************************************/
+  /* Block med egendefinierade layout-delar  */
+  /*******************************************/
   
 
   .header-index{
@@ -189,11 +189,9 @@ float: center;
     background-size: 0 3px, 100% 3px;
   }
   
-  
-  
-  /*********************************/
-  /*  Block med  listors utseende  */
-  /*********************************/
+  /********************************/
+  /*  Block med listors utseende  */
+  /********************************/
   
   ul.menyLista {
     list-style-type: none; /* Remove bullets */
@@ -226,7 +224,7 @@ float: center;
   width: 100%;
   }
 
-  /*Sötter utseende för bild*/
+  /* Sätter utseende för bild */
   .help{
     width: 100px;
   }

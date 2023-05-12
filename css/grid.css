@@ -22,66 +22,64 @@
      "footer"
   }
 
-  .header {
-    grid-area: header;
-    text-align: center;    
-  }
-
-  .header-index {
-    grid-area: header;
-    text-align: center;    
-  }
-
-  .sidebar {
-    grid-area: sidebar;
-    text-align: center;
-  }
-
-  .content {
-    grid-area: content;
-  }
-
-  .footer {
-    grid-area: footer;
-  }
-
-    @media only screen and (min-width: 280px)   {
-    .wrapper {
-      grid-template-columns: 100%;
-      grid-template-areas:
-      "header"
-      "sidebar"
-      "content"
-      "footer";
-      max-width: 600px;
-    }
-    .meny{
-      display: none;
-    }
-    .meny2{
-      display: inline;
-    }
+.header {
+  grid-area: header;
+  text-align: center;    
 }
 
+.header-index {
+  grid-area: header;
+  text-align: center;    
+}
 
+.sidebar {
+  grid-area: sidebar;
+  text-align: center;
+}
 
+.content {
+  grid-area: content;
+}
 
+.footer {
+  grid-area: footer;
+}
 
-    @media only screen and (min-width: 600px)   {
-    .wrapper {
-      grid-gap: 15px;
-      grid-template-columns: 180px auto;
-      grid-template-areas:
-      "sidebar  header"
-      "sidebar content"
-      "footer  footer";
-      max-width: 1200px;
-    }
-    .meny2{
-      display: none;
-    }
-    .meny{
-      display: inline;
-    }
-  }
+ /* Nedan ger skillnad för skärmar som är bredare än 280 pixlar */  
+@media only screen and (min-width: 280px)   {
+.wrapper {
+  grid-template-columns: 100%;
+  grid-template-areas:
+  "header"
+  "sidebar"
+  "content"
+  "footer";
+  max-width: 600px;
+}
+.meny{
+  display: none;
+}
+.meny2{
+  display: inline;
+}
+}
+
+/* Nedan ger skillnad för skärmar som är bredare än 600 pixlar */ 
+@media only screen and (min-width: 600px)   {
+.wrapper {
+  grid-gap: 15px;
+  grid-template-columns: 180px auto;
+  grid-template-areas:
+  "sidebar  header"
+  "sidebar content"
+  "footer  footer";
+  max-width: 1200px;
+}
+.meny2{
+  display: none;
+}
+.meny{
+  display: inline;
+}
+}
 
